@@ -23,3 +23,6 @@ const config: IGameConfig = {
 
 
 const game = new Game(config)
+
+
+console.log(game)

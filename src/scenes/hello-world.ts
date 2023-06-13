@@ -7,7 +7,7 @@ export class HelloWorldScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.setBaseURL('public/')
+        this.load.setBaseURL('/')
 
         this.load.image('sky', 'assets/skies/space3.png')
         this.load.image('logo', 'assets/sprites/phaser3-logo.png')
