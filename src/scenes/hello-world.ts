@@ -15,7 +15,11 @@ export class HelloWorldScene extends Phaser.Scene {
     }
 
     create() {
-        this.add.image(400, 300, 'sky')
+        let windowWidth = window.innerWidth
+        let widnowHeight = window.innerHeight
+
+        let bg = this.add.image(windowWidth / 2, widnowHeight / 2, 'sky')
+        bg.setDisplaySize(windowWidth, widnowHeight)
 
         const particles = this.add.particles(0, 0, 'red', {
             speed: 100,
